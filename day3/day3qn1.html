@@ -1,0 +1,28 @@
+<!-- Take a number from a user and write a function which checks whether 
+    the number is even orodd. Assign the result to a variable and log that variable
+     in the console.
+     Example Input: 23Output: The number entered is 23 and Number is odd -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script>
+        function isEvenOdd(no) {
+            if(no<0)
+                console.log("The no is negative");
+            else if(no>0)
+                console.log("the no is positive");
+            else
+                console.log("Number is zero");
+            
+        }
+        var no=prompt("Enter the no");
+        isEvenOdd(no);
+    </script>
+    <body>
+        
+    </body>
+    </html>
