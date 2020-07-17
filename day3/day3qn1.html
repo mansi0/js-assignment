@@ -11,12 +11,11 @@
     </head>
     <script>
         function isEvenOdd(no) {
-            if(no<0)
-                console.log("The no is negative");
-            else if(no>0)
-                console.log("the no is positive");
+            if(no%2==0)
+                console.log("The no is even");
+           
             else
-                console.log("Number is zero");
+                console.log("Number is odd");
             
         }
         var no=prompt("Enter the no");
