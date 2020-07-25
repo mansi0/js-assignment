@@ -1,0 +1,33 @@
+<!-- Write a program which does the following things:
+1. Takes a positive number from the user.
+2. Makes an array of numbers till the number given by user
+3. Use higher order function to filter the odd numbers
+4. Generate and array of the cubes of the filtered numbers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day5qn1</title>
+    <script>
+        var arr=[];
+        var n=prompt("Enter a positive no");
+        while(n) {
+            if(n>0) {
+                arr.push(n);
+                n=prompt("ENter positive no");
+            }
+            
+            else n=prompt("Enter another positive no");
+        }
+        console.log(arr);
+        let odd=arr.filter(el=>el%2!=0);
+        console.log('odd nos are:'+odd);
+        let cube=odd.map(function(ele){ return Math.pow(ele,3) });
+        console.log(cube);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
