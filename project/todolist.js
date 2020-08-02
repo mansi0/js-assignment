@@ -2,7 +2,7 @@ console.log("Todo List");
 
 const button = document.querySelector('#btn');
 const list = document.querySelector('#list');
-
+var l=localStorage;
 
 button.onclick = function(){
     let item = document.querySelector("#todo").value;
@@ -13,6 +13,7 @@ button.onclick = function(){
     listItem.appendChild(text);
     list.appendChild(listItem);
     document.forms.myForm.reset();
+    l.setItem('item1',item);
 }
 
 const remove = document.querySelector('#rm'); 
